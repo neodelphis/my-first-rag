@@ -1,0 +1,31 @@
+# Fichiers d'environnement et secrets
+# Ne jamais commit les clés d'API !
+.env
+
+# Dossiers d'environnement virtuel Python
+.venv/
+venv/
+env/
+
+# Fichiers de cache et compilés Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dossiers de distribution
+build/
+dist/
+*.egg-info/
+
+# Fichiers système macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Dossiers d'IDE
+.idea/
+.vscode/

@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    container_name: my-first-rag-app
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+      - /app/.venv
+      - /app/__pycache__
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
